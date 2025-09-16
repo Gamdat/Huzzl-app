@@ -137,3 +137,45 @@ button{
 .privacy a:hover{
     text-decoration: underline;
 }
+
+@media (max-width:500px){
+    
+.card{
+    padding: 7px 10px;
+   }
+
+label{
+    margin: 10px 0 4px;
+    font-weight: 300;
+}
+
+input, select{
+    padding: 7px;
+    font-size: 13px;
+}
+
+select{
+    font-size: 13px;
+}
+
+.side{
+    gap: 10px;
+}
+
+.character{
+    font-size: 12px;
+    margin-top: -.5rem;
+}
+
+button{
+    font-size: 15px;
+}
+
+.sign-in{
+    font-size: 13px;
+}
+
+.privacy{
+    font-size: 12px;
+}
+}

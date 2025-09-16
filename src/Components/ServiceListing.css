@@ -79,3 +79,32 @@ button{
 button:hover{
     background: #3336db;
 }
+
+@media (max-width:500px){
+.card{
+    padding: 8px 10px;
+    min-height: 70vh;
+}
+
+label{
+   margin: 8px 0 4px;
+}
+
+input, select, textarea{
+    padding: 9px;
+      margin-bottom: 13px;
+}
+
+.pricing-row{
+    margin-bottom: 9px;
+}
+
+.pricing-row select{
+  padding: 9px;
+}
+
+.pricing-row input{
+   padding: 9px;
+}
+
+}
