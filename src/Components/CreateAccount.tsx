@@ -91,7 +91,6 @@ onChange={handleChange}
         <p className="character">At least 12 characters, no more than 20 characters.</p>
 
         <button type="submit">Continue</button>
-
       </form>
 
 <div className="sign-in">

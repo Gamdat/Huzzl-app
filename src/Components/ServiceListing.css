@@ -36,6 +36,7 @@ input, select, textarea{
       border: 1px solid #03398c;
       border-radius: 6px;
       margin-bottom: 15px;
+      outline: none;
 }
 
 textarea{
@@ -45,16 +46,30 @@ textarea{
 
 .pricing-row{
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    align-items: center;
+    border:  1px solid #bab9ff;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 10px;
 }
 
-.currency, .price{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+.pricing-row select{
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 2px;
 }
 
+.pricing-row input{
+   border: none;
+   padding: 10px;
+   font-size: 14px;
+   margin-bottom: 2px;
+}
+
+.currency{
+    margin-left: 7rem;
+}
 button{
     margin-bottom: 10px;
     cursor: pointer;

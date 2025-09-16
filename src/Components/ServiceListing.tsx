@@ -76,35 +76,33 @@ const ServiceListing: React.FC<ServiceListingProps> = ({ onSubmit }) => {
           <option value="Dog Trainer">Dog Trainer</option>
           <option value="Private Chef">Private Chef</option>
           <option value="House Keeper">House Keeper</option>
-          <option value="Generator Repairer">Generator Repairer</option>
-          <option value="Event Decorator">Event Decorator</option>
-
-        </select>
-
+          <option value="Generator Technician">Generator Technician</option>
+          <option value="Event Decorator">Carpenter</option>
+           <option value="Hair Stylist">Hair Stylist</option>
+            <option value="Painter">Painter</option>
+             <option value="Solar Panel Installe">Solar Panel Installer</option>
+            <option value="Driver/Chauffert">Driver/Chauffer</option>
+             <option value="Baby Sitter">Baby Sitter</option>
+              <option value="Personal Fitness Coach">Personal Fitness Coach</option>
+               <option value="Spa Therapist">Spa Therapist</option>
+</select>
 
 
         <label>Title</label>
 
         <input
-
           type="text"
-
           name="title"
-
-          placeholder="Enter service title"
-
+          placeholder="Enter Service Title"
           value={serviceData.title}
-
           onChange={handleChange}
       
-
         />
 
 
-
+  <label>Pricing</label>
         <div className="pricing-row">
            <div className="price">
-            <label>Pricing</label>
             <input
               type="number"
               name="price"
@@ -117,7 +115,6 @@ const ServiceListing: React.FC<ServiceListingProps> = ({ onSubmit }) => {
 
           </div>
           <div className="currency">
-            <label>Currency</label>
             <select
               name="currency"
               value={serviceData.currency}
@@ -134,52 +131,30 @@ const ServiceListing: React.FC<ServiceListingProps> = ({ onSubmit }) => {
 
 
         <label>Availability</label>
-
         <input
-
           type="text"
-
           name="availability"
-
           placeholder="Mondays, Tuesdays..."
-
           value={serviceData.availability}
-
           onChange={handleChange}
          
-
         />
-
-
 
         <label>Description</label>
-
         <textarea
-
           name="description"
-
           placeholder="Enter a description..."
-
           value={serviceData.description}
-
           onChange={handleChange}
-         
 
         />
 
-
-
         <button type="submit">Continue</button>
-
       </form>
-
     </div>
 </div>
   );
-
 };
-
-
 
 export default ServiceListing;
 
