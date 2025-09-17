@@ -48,12 +48,15 @@ const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 
   return (
 <div className="page-profile">
+  {/*card */}
     <div className="card">
  <div className="logo">
         <img src="/images/Logo.png" alt="logo"/>
       </div>
+
  <h2>Profile Setup</h2>
       <ProgressBar step={2} />
+
       <form onSubmit={handleSubmit}>
         <div className="profile-image-upload">
 
@@ -72,6 +75,7 @@ const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     accept="image/*"
     onChange={handleImageChange}
     style={{ display: "none" }}
+  
   />
 
 </div>
@@ -82,7 +86,7 @@ const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
           placeholder="Tell us about yourself.."
           value={profileData.bio}
           onChange={handleChange}
-        
+       
         />
 
         <label>Description</label>
@@ -90,7 +94,8 @@ const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
           name="description"
           placeholder="Enter a description..."
           value={profileData.description}
-          onChange={handleChange}/>
+          onChange={handleChange}
+         />
          
  <div className="document-upload">
   <label>Business Verification Document</label>
@@ -108,7 +113,7 @@ const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
             accept=".pdf,.doc,.docx,.jpg,.png"
             onChange={handleFileChange}
             style={{ display: "none" }}
-          />
+        />
         </div>
 
         <button type="submit">Continue</button>

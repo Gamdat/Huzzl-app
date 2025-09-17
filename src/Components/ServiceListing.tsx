@@ -1,26 +1,15 @@
-
 import React, { useState } from "react";
+import "./ServiceListing.css";
 import ProgressBar from "./ProgressBar";
 import type { ServiceData } from "../types";
-import "./ServiceListing.css";
-
 
 interface ServiceListingProps {
   onSubmit: (data: ServiceData) => void;
-
+  initialData: ServiceData;
 }
 
-const ServiceListing: React.FC<ServiceListingProps> = ({ onSubmit }) => {
-  const [serviceData, setServiceData] = useState<ServiceData>({
-    category: "Plumbing",
-    title: "",
-    currency: "NGN",
-    price: "",
-    availability: "",
-    description: "",
-  });
-
-
+const ServiceListing: React.FC<ServiceListingProps> = ({ onSubmit, initialData }) => {
+  const [serviceData, setServiceData] = useState<ServiceData>(initialData);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
@@ -28,39 +17,28 @@ const ServiceListing: React.FC<ServiceListingProps> = ({ onSubmit }) => {
     setServiceData({ ...serviceData, [e.target.name]: e.target.value });
   };
 
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
     onSubmit(serviceData);
-
   };
 
-
-
   return (
-<div className="page-service">
     <div className="card">
- <div className="logo">
+      <div className="logo">
         <img src="/images/Logo.png" alt="logo"/>
       </div>
-        <h2>Service Listing</h2>
+
+            <h2>Service Listing</h2>
       <ProgressBar step={3} />
-
-    
-
       <form onSubmit={handleSubmit}>
 
+        {/* Category */}
         <label>Category</label>
-
         <select
-
           name="category"
-
           value={serviceData.category}
-
-     
-
+          onChange={handleChange}
+          required
         >
 
 <option value="Plumbing">Plumbing</option>
@@ -88,48 +66,46 @@ const ServiceListing: React.FC<ServiceListingProps> = ({ onSubmit }) => {
 </select>
 
 
+        {/* Title */}
         <label>Title</label>
-
         <input
           type="text"
           name="title"
-          placeholder="Enter Service Title"
+          placeholder="Enter service title"
           value={serviceData.title}
           onChange={handleChange}
-      
+required
         />
 
-
-  <label>Pricing</label>
+        {/* Currency + Price row */}
+         <label>Pricing</label>
         <div className="pricing-row">
-           <div className="price">
+          <div className="price">
             <input
               type="number"
               name="price"
               placeholder="5000"
               value={serviceData.price}
               onChange={handleChange}
-           
-
+              required
             />
 
           </div>
-          <div className="currency">
+           <div className="currency">
             <select
               name="currency"
               value={serviceData.currency}
               onChange={handleChange}
+              required
             >
               <option value="NGN">NGN</option>
               <option value="USD">USD</option>
               <option value="GBP">GBP</option>
             </select>
           </div>
-
         </div>
 
-
-
+        {/* Availability */}
         <label>Availability</label>
         <input
           type="text"
@@ -137,24 +113,23 @@ const ServiceListing: React.FC<ServiceListingProps> = ({ onSubmit }) => {
           placeholder="Mondays, Tuesdays..."
           value={serviceData.availability}
           onChange={handleChange}
-         
+          required
         />
 
+        {/* Description */}
         <label>Description</label>
         <textarea
           name="description"
           placeholder="Enter a description..."
           value={serviceData.description}
           onChange={handleChange}
-
+          required
         />
 
         <button type="submit">Continue</button>
       </form>
     </div>
-</div>
   );
 };
 
-export default ServiceListing;
-
+export default ServiceListing
