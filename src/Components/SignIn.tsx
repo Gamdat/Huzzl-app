@@ -36,7 +36,7 @@ const Login: React.FC = () => {
             <img src="/images/Logo.png" alt="logo"/>
         </div>
         <img src="/images/worker.png" alt="Worker" className="login-image" />
-        <a href="/" className="back-link">Back to Website →</a>
+        <a href="/" className="back-link">Back to Website <span>→</span></a>
       </div>
 
 
@@ -46,10 +46,12 @@ const Login: React.FC = () => {
 
         <div className="social-login">
            <button className="google">
-                   <img src="./images/google.png" alt google-logo/> <span>Sign Up with Google</span>
+                  <span className="google-icon"> <img src="./images/google.png" alt= "google-logo"/></span>
+                  <span className="google-signin">Log In with Google</span>
                 </button>
                 <button className="apple">
-                   <img src="./images/apple.png" alt="apple-logo"/> <span>Sign Up with Apple</span>
+                  <span className="apple-icon"> <img src="./images/apple.png" alt="apple-logo"/></span>
+                   <span className="apple-signin">Log In with Apple</span>
                 </button> </div>
 <div className="divider"></div>
         <p className="or-text">or log in by using email address</p>
@@ -60,7 +62,7 @@ const Login: React.FC = () => {
             id="email"
             type="email"
             name="email"
-            placeholder="Enter your email"
+            placeholder=""
             value={formData.email}
             onChange={handleChange}
             required
@@ -71,7 +73,7 @@ const Login: React.FC = () => {
             id="password"
             type="password"
             name="password"
-            placeholder="Enter your password"
+            placeholder=""
             value={formData.password}
             onChange={handleChange}
             required

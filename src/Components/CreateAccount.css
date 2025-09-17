@@ -156,7 +156,7 @@ button{
    }
 
 .logo{
-    margin-left: 11rem;
+    margin-left: 12rem;
 }
 
    h2{
@@ -183,7 +183,6 @@ select{
 
 .character{
     font-size: 11px;
-    margin-top: -.5rem;
 }
 
 button{
@@ -196,12 +195,11 @@ button{
 }
 
 .privacy{
-    font-size: 10.5px;
-        margin-left: -1rem;
+    font-size: 9.5px;
 }
 
 .privacy a{
-    font-size: 10.5px;
+    font-size: 11px;
 }
 }
 
