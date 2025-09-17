@@ -2,7 +2,7 @@
     background: url("/public/images/bg-profile.jpg");
     background-size: cover;
     padding: 0;
-    color: #03398c;
+    color: #2454f3;
     border-radius: 10px;
     min-height: 140vh;
     margin-top: -5rem;
@@ -124,7 +124,7 @@ button{
 }
 
 button:hover{
-    background: #3d40db;
+    background: #2454f3;
 }
 
 @media (max-width:500px){

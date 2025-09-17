@@ -42,9 +42,9 @@ const CreateAccount: React.FC<CreateAccountProps> = ({ onContinue }) => {
 value={formData.location}
 onChange={handleChange}
 >
-  <option value="NGN">Nigeria</option>
-  <option value="GH">Ghana</option>
-  <option value="KE">Kenya</option>
+  <option value="Nigeria">NGN</option>
+  <option value="Ghana">GH</option>
+  <option value="Kenya">KE</option>
 </select>
 
         <input
