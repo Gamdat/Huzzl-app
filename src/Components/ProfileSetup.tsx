@@ -75,7 +75,7 @@ const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     accept="image/*"
     onChange={handleImageChange}
     style={{ display: "none" }}
-  
+  required
   />
 
 </div>
@@ -86,7 +86,7 @@ const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
           placeholder="Tell us about yourself.."
           value={profileData.bio}
           onChange={handleChange}
-       
+         required
         />
 
         <label>Description</label>
@@ -95,6 +95,7 @@ const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
           placeholder="Enter a description..."
           value={profileData.description}
           onChange={handleChange}
+            required
          />
          
  <div className="document-upload">
@@ -113,6 +114,7 @@ const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
             accept=".pdf,.doc,.docx,.jpg,.png"
             onChange={handleFileChange}
             style={{ display: "none" }}
+              required
         />
         </div>
 

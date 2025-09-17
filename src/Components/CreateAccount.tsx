@@ -46,7 +46,7 @@ const CreateAccount: React.FC<CreateAccountProps> = ({ onContinue }) => {
 <select name="country"
 value={formData.location}
 onChange={handleChange}
-
+  required
 >
   <option value="Nigeria">NGN</option>
   <option value="Ghana">GH</option>
@@ -59,7 +59,7 @@ onChange={handleChange}
           placeholder="+234 000-000-0000"
           value={formData.phone}
           onChange={handleChange}
-       
+         required
        />
         </div>
 
@@ -72,13 +72,13 @@ onChange={handleChange}
           placeholder="Olivia Smith"
           value={formData.name}
           onChange={handleChange}
-   
+     required
         />
 </div>
 <div className="location">
         <label>Location</label>
         <select name="location" value={formData.location} onChange={handleChange}
-      
+        required
        >
           <option value="Nigeria">Nigeria</option>
           <option value="Ghana">Ghana</option>
@@ -94,7 +94,7 @@ onChange={handleChange}
           placeholder="************"
           value={formData.password}
           onChange={handleChange}
-   
+     required
         />
 
         <p className="character">At least 12 characters, no more than 20 characters.</p>

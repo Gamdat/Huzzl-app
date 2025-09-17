@@ -23,6 +23,7 @@ const ServiceListing: React.FC<ServiceListingProps> = ({ onSubmit, initialData }
   };
 
   return (
+    <div className="page-service">
     <div className="card">
       <div className="logo">
         <img src="/images/Logo.png" alt="logo"/>
@@ -128,6 +129,7 @@ required
 
         <button type="submit">Continue</button>
       </form>
+    </div>
     </div>
   );
 };

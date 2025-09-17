@@ -142,6 +142,82 @@ input{
     text-decoration: underline;
 }
 
+
+@media (max-width:768px){
+
+.logo-huzzl{
+    margin-bottom: 5px;
+    margin-left: 1rem;
+}
+
+
+.login-image{
+   height: 70vh;
+   object-position: left;
+   border-radius: 12px;
+   width: 100%;
+   
+}
+
+.back-link{
+    position: absolute;
+    top: 14rem;
+      left: 13rem;
+}
+
+h2{
+    margin-top: 3rem;
+    font-size: 21px;
+}
+
+.signin-right{
+    margin-left: 1rem;
+}
+
+.signin-left{
+    margin-left: -1rem;
+}
+
+.social-login{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.social-login button{
+    padding: 7px;
+    font-size: 12px;
+    font-weight: 600;
+    height: 40px;
+}
+
+
+.google-icon{
+    margin-top: 3px;
+}
+
+.apple-icon{
+    margin-top: 3px;
+}
+
+p{
+    font-size: 16px;
+}
+
+.signin-btn{
+    padding: 13px;
+    font-size: 16px;
+}
+
+.signup-text{
+   margin-top: 10px;
+    font-size: 16px;
+}
+
+   
+}
+
+
 @media (max-width:500px){
     
 .signin-container{
@@ -167,8 +243,8 @@ margin-left: 3px;
 .back-link{
     position: absolute;
     top: 13rem;
-      left: 7rem;
-    padding: 4px 5px;
+      left: 5rem;
+    padding: 4px 6px;
     font-size: 13px;
     font-weight: 400;
 }
@@ -226,6 +302,95 @@ input{
 .signup-text{
    margin-top: 10px;
     font-size: 14px;
+}
+
+}
+
+@media (max-width:400px) {
+    .signin-container{
+gap: 5px;
+margin-left: 3px;
+}
+
+.signin-left{
+    margin-left: -1.5rem;
+}
+
+.login-image{
+   height: 73vh;
+   width: 140%;
+   
+}
+
+.back-link{
+    position: absolute;
+    top: 13rem;
+      left: 3rem;
+    padding: 5px 4px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.signin-right{
+    margin-left: 3rem;
+}
+
+h2{
+    margin-top: 4rem;
+    font-size: 17px;
+}
+
+.social-login{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.social-login button{
+    padding: 4px;
+    font-size: 11px;
+    font-weight: 600;
+     width: 92%;
+}
+
+
+.google-icon{
+    margin-top: 3px;
+    margin-left: -15px;
+}
+
+.apple{
+    margin-top: -.4rem;
+}
+
+.apple-icon{
+    margin-top: 3px;
+     margin-left: -15px;
+}
+
+
+p{
+    font-size: 15px;
+}
+
+form{
+    width: 94%;
+}
+input{
+    margin: 5px 0;
+    padding: 7px;
+    font-size: 13px;
+}
+
+.signin-btn{
+    padding: 8px;
+    font-size: 14px;
+}
+
+.signup-text{
+   margin-top: 10px;
+    font-size: 13px;
+    margin-left: -10px;
 }
 
 }
