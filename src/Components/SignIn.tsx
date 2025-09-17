@@ -84,7 +84,7 @@ const Login: React.FC = () => {
         </form>
 
         <p className="signup-text">
-          Don't have an account?<Link to="/createAccount">Sign Up</Link>
+          Don't have an account?<Link to="/create-account">Sign Up</Link>
         </p>
       </div>
     </div>
