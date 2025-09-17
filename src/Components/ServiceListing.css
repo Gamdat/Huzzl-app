@@ -70,6 +70,7 @@ textarea{
 .currency{
     margin-left: 2rem;
 }
+
 button{
     margin-bottom: 10px;
     cursor: pointer;
@@ -108,4 +109,8 @@ input, select, textarea{
    padding: 9px;
 }
 
+
+.currency{
+    margin-left: 5px;
+}
 }
