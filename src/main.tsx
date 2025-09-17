@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/create-account" element={<CreateAccount />} />
+        <Route path="/create-account" element={<CreateAccount onContinue={(data) => console.log(data)}/>} />
 
         {/* Login page route */}
         <Route path="/signin" element={<SignIn />} />
