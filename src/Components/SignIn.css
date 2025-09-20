@@ -41,6 +41,12 @@
     text-decoration: none;
 }
 
+.back-link:hover{
+    color: #fff;
+    background-color: #03398c;
+    border: none;
+}
+
 h2{
     margin-top: 3rem;
     font-size: 21px;
@@ -156,7 +162,6 @@ input{
    object-position: left;
    border-radius: 12px;
    width: 100%;
-   
 }
 
 .back-link{
@@ -246,7 +251,7 @@ margin-left: 3px;
       left: 5rem;
     padding: 4px 6px;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .signin-right{
@@ -307,9 +312,10 @@ input{
 }
 
 @media (max-width:400px) {
+
     .signin-container{
-gap: 5px;
-margin-left: 3px;
+   gap: 5px;
+   margin-left: 3px;
 }
 
 .signin-left{
@@ -325,10 +331,10 @@ margin-left: 3px;
 .back-link{
     position: absolute;
     top: 13rem;
-      left: 3rem;
+      left: 2.5rem;
     padding: 5px 4px;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .signin-right{
@@ -337,7 +343,7 @@ margin-left: 3px;
 
 h2{
     margin-top: 4rem;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .social-login{

@@ -94,6 +94,8 @@ onChange={handleChange}
           placeholder="************"
           value={formData.password}
           onChange={handleChange}
+            minLength={12} 
+          maxLength={20}
      required
         />
 
